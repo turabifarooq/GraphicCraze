@@ -1,0 +1,318 @@
+*{
+    font-family: "Futura Md Bt";
+    margin: 0;
+    padding: 0;
+}
+.mainDiv{
+    /* width: 100%; */
+    background-color: #f04245;
+}
+.header{
+    background-color: #f04245;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+
+}
+
+.contact-details{
+    width: 85%;
+}
+
+/* .contact-details > i{
+    margin-left: 5px;
+} */
+
+.contact-details > i > a{
+    padding-left: 5px;
+}
+
+.contact-details > i.mail-icon{
+    margin-left: 20px;
+}
+
+.contact-details > i, .contact-details > i > a{
+    color: #f9f8f8;
+    text-decoration: none;
+    font-size: 15px;
+}
+.contact-details > i > a:hover, .contact-details > i:hover{
+    text-decoration: none;
+    color: #3f3244;
+}
+
+.social-links{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-links > .items > a > img{
+    width: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-details{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .contact-details > i, .contact-details > i > a{
+        color: #f9f8f8;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .contact-details > i > a{
+        padding-left: 5px;
+    }
+
+    .contact-details > i{
+        margin-left: 0;
+    }
+
+    .contact-details > i.mail-icon{
+        margin-left: 20px;
+    }
+
+    .social-links{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        flex-wrap: wrap;
+    }
+
+    .social-links > .items{
+        padding: 5px;
+    }
+
+    .social-links > .items > a > img{
+        width: 30px;
+    }
+
+  }
+
+  @media only screen and (max-width: 353px){
+      .contact-details > i{
+          padding: 5px;
+      }
+      .contact-details > i.mail-icon{
+        margin-left: 0px;
+        order: -1;
+    }
+  }
+
+        /* NavBar */
+
+
+
+div.navBar{
+    background-color: #f0f2ef;
+}       
+
+nav.navbar{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+a.navbar-brand > img{
+    width: 200px;
+}
+
+ul.navbar-nav > li, a.nav-link{
+    padding: 5px 10px 5px 10px;
+    color: #3f3244;
+    text-decoration: none;
+}
+a.nav-link{
+    /* padding: 5px 10px 5px 10px; */
+    color: #3f3244 !important;
+}
+ul.navbar-nav > li:hover, ul.navbar-nav > li > a.nav-link:hover{
+    background-color: #3f3244 !important;
+    color: #f9f8f8 !important; 
+    border-radius: 10px;
+}
+
+ul.navbar-nav > li:hover, ul.navbar-nav > li > a.nav-link:active{
+    background-color: #3f3244 !important;
+
+}
+
+@media only screen and (max-width: 768px){
+    ul.navbar-nav{
+        text-align: center;
+        /* margin: 0 auto; */
+    }
+
+    ul.navbar-nav > li{
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    a.navbar-brand > img.img-fluid{
+        text-align: center;
+        margin: 0 auto;
+        width: 170px;
+    }
+}
+
+
+
+            /* Image slider */
+
+.carousel-item > img{
+    /* width: 1400px !important; */
+    margin: 0 auto;
+}
+
+
+            /* OUR SERVICES */
+
+.our-services{
+    background-color: #f0f2ef;
+    padding: 50px 0;
+    /* min-height: 300px; */
+}
+
+.service-details{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.service-heading{
+    color: #3f3244;
+    /* padding-top: 30px; */
+    text-align: center;
+}
+
+.service-heading::after{
+    background-color: #f04245;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+.service-items{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 150px;
+}
+.first-service-item, .second-service-item, .third-service-item, .forth-service-item{
+    width: 180px;
+}
+
+.first-item-text, .second-item-text, .third-item-text, .forth-item-text{
+    margin-top: 10px;
+
+}
+
+.first-item-icon, .second-item-icon, .third-item-icon, .forth-item-icon{
+    color: #f04245;
+}
+.first-item-icon > span, .second-item-icon > span, .third-item-icon > span, .forth-item-icon > span{
+    color: #3f3244;
+}
+
+@media only screen and (max-width: 768px){
+    .first-service-item, .second-service-item, .third-service-item, .forth-service-item{
+        width: 280px;
+        margin-bottom: 40px;
+    }
+    .service-items{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 559px){
+    .first-service-item, .second-service-item, .third-service-item, .forth-service-item{
+        text-align: center;
+    }
+
+    .service-items{
+        justify-content: space-around;
+    }
+}
+
+
+/* portfolio */
+
+.portfolio{
+    background-color: #3f3244;
+    padding: 50px 0;
+    border: 1px solid #f04245;
+}
+
+.portfolio-details{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.portfolio-heading{
+    color: #f0f2ef;
+    text-align: center;
+}
+
+.portfolio-heading::after{
+    background-color: #f04245;
+    content: "";
+    width: 100px;
+    height: 3px;
+    display: block;
+    margin: 20px auto;
+}
+
+.portfolio-items{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 150px;
+    align-self: center;
+}
+
+.first-portfolio-img, .second-portfolio-img, .third-portfolio-img, .forth-portfolio-img, .fifth-portfolio-img, .sixth-portfolio-img{
+    width: 320px;
+    margin-top: 30px;
+    box-shadow: #f9f8f8 0px 0px 10px;
+    
+}
+
+@media only screen and (max-width: 961px){
+    .portfolio-items{
+        justify-content: space-around
+    }
+    .first-portfolio-img, .second-portfolio-img, .third-portfolio-img, .forth-portfolio-img, .fifth-portfolio-img, .sixth-portfolio-img{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 901px){
+
+    .portfolio-items{
+        justify-content: center;
+    }
+    .first-portfolio-img, .second-portfolio-img, .third-portfolio-img, .forth-portfolio-img, .fifth-portfolio-img, .sixth-portfolio-img{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 559px){
+    .first-portfolio-img, .second-portfolio-img, .third-portfolio-img, .forth-portfolio-img, .fifth-portfolio-img, .sixth-portfolio-img{
+        width: 300px;
+    }
+}
